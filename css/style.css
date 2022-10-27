@@ -50,7 +50,7 @@ p b{
     background-image: url(../imgs/bg-1.png), url('../imgs/bolinhas-1.png');
     background-position: right top, left center;
     background-repeat: no-repeat;
-    background-size: 50%, 175px;
+    background-size: 50%, 9%;
     height: 100vh;
 }
 
@@ -93,10 +93,10 @@ p b{
 
 /* BLOCO 2 */
 .bloco-2{
-    background-image: url('../imgs/bg-2.png');
-    background-position: -50px center, left center;
+    background-image: url('../imgs/bg-2.png'), url('../imgs/bolinhas-2.png');
+    background-position: -50px center, right top;
     background-repeat: no-repeat;
-    background-size: 45%, 175px;
+    background-size: 45%, 6%;
 }
 
 .bloco-2 .container{
@@ -109,5 +109,26 @@ p b{
 .bloco-2 p{
     width: 50%;
     margin-left: auto;
+    text-align: justify;
+}
+
+/* BLOCO 3 */
+.bloco-3{
+    background-image: url('../imgs/bg-3.png'), url('../imgs/bolinhas-3.png');
+    background-position: right center, left top;
+    background-repeat: no-repeat;
+    background-size: 45%, 18%;
+}
+
+.bloco-3 .container{
+    display: flex;
+    max-width: 65vw;
+    margin: auto;
+    padding: 15vw 30px;
+}
+
+.bloco-3 p{
+    width: 50%;
+    margin-right: auto;
     text-align: justify;
 }
