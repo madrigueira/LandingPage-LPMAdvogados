@@ -27,7 +27,7 @@ p{
     font-size: 2.2vh;
     font-weight: 300;
     letter-spacing: .5px;
-    line-height: 1.6vw;
+    line-height: 2.7vh;
     color: rgb(216, 216, 216);
 }
 
@@ -43,6 +43,10 @@ p b{
     text-decoration: none;
     border-radius: 12px;
     width: fit-content;
+}
+
+span{
+    color: #CC9463;
 }
 
 /* BLOCO 1 */
@@ -93,7 +97,7 @@ p b{
 
 /* BLOCO 2 */
 .bloco-2{
-    background-image: url('../imgs/bg-2.png'), url('../imgs/bolinhas-2.png');
+    background-image: url('../imgs/bg-2.png'), url('../imgs/bolinhas-4.png');
     background-position: -50px center, right top;
     background-repeat: no-repeat;
     background-size: 45%, 6%;
@@ -114,7 +118,7 @@ p b{
 
 /* BLOCO 3 */
 .bloco-3{
-    background-image: url('../imgs/bg-3.png'), url('../imgs/bolinhas-3.png');
+    background-image: url('../imgs/bg-3.png'), url('../imgs/bolinhas-5.png');
     background-position: right center, left top;
     background-repeat: no-repeat;
     background-size: 45%, 18%;
@@ -131,4 +135,78 @@ p b{
     width: 50%;
     margin-right: auto;
     text-align: justify;
+}
+
+/* BLOCO 4 */
+.bloco-4{
+    background-image: url('../imgs/bolinhas-2.png'), url('../imgs/bolinhas-3.png');
+    background-position: right top, left bottom;
+    background-repeat: no-repeat;
+    background-size: 9%, 13%;
+}
+
+.bloco-4 .container{
+    display: flex;
+    flex-direction: column;
+    max-width: 65vw;
+    margin: auto;
+    padding: 30px;
+}
+
+.bloco-4 .container .box{
+    padding: 45px 0;
+}
+
+.bloco-4 .container .box h5{
+    padding-bottom: 15px;
+}
+
+.bloco-4 .container .box div{
+    padding: 12px 35px;
+    background-image: url('../imgs/arrow.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.bloco-4 .container .box div p{
+    font-size: 2.5vh;
+    color: #fff;
+    margin-top: 0px;
+}
+
+/* BLOCO 5 */
+.bloco-5 .container{
+    display: flex;
+    flex-direction: column;
+    max-width: 65vw;
+    margin: auto;
+    padding: 10vh 30px;
+}
+
+.bloco-5 .container p{
+    margin-bottom: 75px;
+    text-align: justify;
+}
+
+.bloco-5 .container .box{
+    display: flex;
+    gap: 50px;
+}
+
+.bloco-5 .container .box .card{
+    border: solid 2px #CC9463;
+    text-align: center;
+    height: 350px;
+    width: 100%;
+    margin: auto;
+}
+
+.bloco-5 .container .box .card img{
+    height: auto;
+    margin-top: -55px;
+}
+
+.bloco-5 .container .box .card p{
+    text-align: center;
+    padding: 0 30px;
 }
