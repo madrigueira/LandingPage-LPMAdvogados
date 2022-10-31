@@ -8,6 +8,7 @@
 
 body{
     background-color: #08172E;
+    overflow-x:hidden;
 }
 
 /* TEXTOS */
@@ -370,6 +371,12 @@ footer .container .box div{
     margin-top: 4vh;
 }
 
+.mobile{
+    display: none;
+    width: 100% !important;
+    margin-top: 45px;
+}
+
 /* media: BLOCO 1 */
 @media only screen and (max-width: 900px) {
     .bloco-1, .bloco-2, .bloco-3, .bloco-4, .bloco-5, .bloco-6, .bloco-7, .bloco-8, .bloco-9, footer{
@@ -379,21 +386,41 @@ footer .container .box div{
     .bloco-1 .container, .bloco-2 .container, .bloco-3 .container, .bloco-4 .container, .bloco-5 .container, 
     .bloco-6 .container, .bloco-7 .container, .bloco-8 .container, .bloco-9 .container, footer .container{
         max-width: 100vw;
+        flex-direction: column;
     }
 
     .bloco-2 p, .bloco-3 p, .bloco-6 .box, .bloco-8 p, .bloco-9 p{
         width: 100%;
     }
 
-    .bloco-5 .container .grid, .bloco-7 .container .grid{
+    .bloco-5 .container .grid{
         grid-template-columns: 100%;
-    }
-
-    .bloco-7 img{
-        display: none;
     }
 
     .bloco-5 .container .grid .card{
         margin-bottom: 35px;
+    }
+
+    .bloco-7 .container .grid{
+        grid-template-columns: 100%;
+        margin: auto;
+    }
+
+    .bloco-7 .container .grid img:first-child{
+        display: none;
+    }
+
+    /*---------------------------------------*/
+
+    .bloco-1 .container h1{
+        margin-top: 10vh;
+    }
+
+    .bloco-1{
+        height: auto;
+    }
+
+    .mobile{
+        display: inline !important;
     }
     }
