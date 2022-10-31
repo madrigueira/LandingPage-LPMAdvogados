@@ -10,7 +10,7 @@ body{
     background-color: #08172E;
 }
 
-/* TEXTS */
+/* TEXTOS */
 h1{
     font-size: 9vh;
     font-weight: 400;
@@ -27,7 +27,7 @@ p{
     font-size: 2.2vh;
     font-weight: 300;
     letter-spacing: .5px;
-    line-height: 2.7vh;
+    line-height: 3vh;
     color: rgb(216, 216, 216);
 }
 
@@ -37,12 +37,17 @@ p b{
 
 .btn{
     background-color: #CC9463;
-    padding: 1.5% 4%;
+    padding: 1.8vh 5vh;
     font-size: 2.1vh;
     font-weight: 600;
     text-decoration: none;
     border-radius: 12px;
     width: fit-content;
+    transition: 0.2s;
+}
+
+.btn:hover{
+    background-color: #dfa878;
 }
 
 span{
@@ -82,17 +87,6 @@ span{
 
 .bloco-1 .container a{
     margin-top: 35px;
-}
-
-/* media: BLOCO 1 */
-@media only screen and (max-width: 900px) {
-.bloco-1{
-    background-image: none;
-}
-
-.bloco-1 .container{
-    max-width: 100vw;
-}
 }
 
 /* BLOCO 2 */
@@ -180,33 +174,226 @@ span{
     flex-direction: column;
     max-width: 65vw;
     margin: auto;
-    padding: 10vh 30px;
+    padding: 30px;
 }
 
-.bloco-5 .container p{
-    margin-bottom: 75px;
+.bloco-5 .container .grid{
+    display: grid;
+    grid-template-columns: 33.3% 33.4% 33.3%;
+}
+
+.bloco-5 .container .grid .card{
+    border: solid #CC9463 2px;
+    margin: 0 15px;
+    text-align: center;
+    padding: 0 9% 9% 9%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bloco-5 .container .grid .card img{
+    width: 40%;
+    margin: -16% auto 0 auto;
+}
+
+.bloco-5 .container .grid .card p{
+    margin: auto;
+    padding-top: 2%;
+}
+
+.bloco-5 .container #text{
+    margin-top: 50px;
     text-align: justify;
 }
 
-.bloco-5 .container .box{
+/* BLOCO 6 */
+.bloco-6{
+    background-image: url('../imgs/bg-4.png'), url('../imgs/bolinhas-4.png');
+    background-position: right center, left top;
+    background-repeat: no-repeat;
+    background-size: 45%, 6%;
+}
+
+.bloco-6 .container{
     display: flex;
-    gap: 50px;
-}
-
-.bloco-5 .container .box .card{
-    border: solid 2px #CC9463;
-    text-align: center;
-    height: 350px;
-    width: 100%;
+    max-width: 65vw;
     margin: auto;
+    padding: 15vw 30px;
 }
 
-.bloco-5 .container .box .card img{
-    height: auto;
-    margin-top: -55px;
+.bloco-6 .box{
+    width: 50%;
+    margin-right: auto;
+    text-align: justify;
 }
 
-.bloco-5 .container .box .card p{
-    text-align: center;
-    padding: 0 30px;
+.bloco-6 .box form input{
+    width: 100%;
+    color: #08172E;
+    height: 5.5vh;
+    outline: none;
+    margin-top: 25px;
+    border: 0;
+    border-radius: 0;
+    padding-left: 20px;
 }
+
+.bloco-6 .box form input::placeholder{
+    font-size: 2vh;
+}
+
+.bloco-6 .box form button{
+    width: 100%;
+    margin-top: 25px;
+    border: 0;
+    border-radius: 0;
+    height: 5.5vh;
+    background-color: #CC9463;
+    font-size: 2vh;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.bloco-6 .box form button:hover{
+    background-color: #dfa878;
+}
+
+/* BLOCO 7 */
+.bloco-7{
+    background-image: url('../imgs/bolinhas-5.png');
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 18%;
+}
+
+.bloco-7 .container{
+    display: flex;
+    max-width: 65vw;
+    margin: auto;
+    padding: 30px;
+}
+
+.bloco-7 .container .grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.bloco-7 .container .grid img{
+    width: 75%;
+}
+
+.bloco-7 .container .grid p{
+    margin: auto;
+    text-align: justify;
+}
+
+.bloco-7 .container .grid p span{
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+/* BLOCO 8 */
+.bloco-8{
+    background-image: url('../imgs/bg-5.png'), url('../imgs/bolinhas-1.png');
+    background-position: right center, left top;
+    background-repeat: no-repeat;
+    background-size: 45%, 9%;
+}
+
+.bloco-8 .container{
+    display: flex;
+    max-width: 65vw;
+    margin: auto;
+    padding: 15vw 30px;
+}
+
+.bloco-8 p{
+    width: 50%;
+    margin-right: auto;
+    text-align: justify;
+}
+
+/* BLOCO 9 */
+.bloco-9{
+    background-image: url('../imgs/bg-6.png'), url('../imgs/bolinhas-5.png');
+    background-position: left center, left top;
+    background-repeat: no-repeat;
+    background-size: 45%, 18%;
+}
+
+.bloco-9 .container{
+    display: flex;
+    max-width: 65vw;
+    margin: auto;
+    padding: 15vw 30px;
+}
+
+.bloco-9 p{
+    width: 50%;
+    margin-left: auto;
+    text-align: justify;
+}
+
+/* FOOTER */
+footer{
+    background-image: url('../imgs/bolinhas-4.png'), url('../imgs/bolinhas-3.png');
+    background-position: right top, left bottom;
+    background-repeat: no-repeat;
+    background-size: 6%, 13%;
+    height: 75vh;
+}
+
+footer .container{
+    display: flex;
+    flex-direction: column;
+    max-width: 65vw;
+    margin: auto;
+    padding: 30px;
+    height: 100%;
+}
+
+footer .container .box{
+    margin: auto 0;
+}
+
+footer .container .box img{
+    width: 20vw;
+    min-width: 230px;
+}
+
+footer .container .box div{
+    padding: 12px 35px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 25px;
+    margin-top: 4vh;
+}
+
+/* media: BLOCO 1 */
+@media only screen and (max-width: 900px) {
+    .bloco-1, .bloco-2, .bloco-3, .bloco-4, .bloco-5, .bloco-6, .bloco-7, .bloco-8, .bloco-9, footer{
+        background-image: none;
+    }
+    
+    .bloco-1 .container, .bloco-2 .container, .bloco-3 .container, .bloco-4 .container, .bloco-5 .container, 
+    .bloco-6 .container, .bloco-7 .container, .bloco-8 .container, .bloco-9 .container, footer .container{
+        max-width: 100vw;
+    }
+
+    .bloco-2 p, .bloco-3 p, .bloco-6 .box, .bloco-8 p, .bloco-9 p{
+        width: 100%;
+    }
+
+    .bloco-5 .container .grid, .bloco-7 .container .grid{
+        grid-template-columns: 100%;
+    }
+
+    .bloco-7 img{
+        display: none;
+    }
+
+    .bloco-5 .container .grid .card{
+        margin-bottom: 35px;
+    }
+    }
