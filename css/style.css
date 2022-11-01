@@ -93,9 +93,9 @@ span{
 /* BLOCO 2 */
 .bloco-2{
     background-image: url('../imgs/bg-2.png'), url('../imgs/bolinhas-4.png');
-    background-position: -50px center, right top;
+    background-position: left center, right top;
     background-repeat: no-repeat;
-    background-size: 45%, 6%;
+    background-size: 40%, 6%;
 }
 
 .bloco-2 .container{
@@ -116,7 +116,7 @@ span{
     background-image: url('../imgs/bg-3.png'), url('../imgs/bolinhas-5.png');
     background-position: right center, left top;
     background-repeat: no-repeat;
-    background-size: 45%, 18%;
+    background-size: 40%, 18%;
 }
 
 .bloco-3 .container{
@@ -154,6 +154,7 @@ span{
 
 .bloco-4 .container .box h5{
     padding-bottom: 15px;
+    font-size: 2.5vh;
 }
 
 .bloco-4 .container .box div{
@@ -164,7 +165,6 @@ span{
 }
 
 .bloco-4 .container .box div p{
-    font-size: 2.5vh;
     color: #fff;
     margin-top: 0px;
 }
@@ -212,7 +212,7 @@ span{
     background-image: url('../imgs/bg-4.png'), url('../imgs/bolinhas-4.png');
     background-position: right center, left top;
     background-repeat: no-repeat;
-    background-size: 45%, 6%;
+    background-size: 40%, 6%;
 }
 
 .bloco-6 .container{
@@ -299,7 +299,7 @@ span{
     background-image: url('../imgs/bg-5.png'), url('../imgs/bolinhas-1.png');
     background-position: right center, left top;
     background-repeat: no-repeat;
-    background-size: 45%, 9%;
+    background-size: 40%, 9%;
 }
 
 .bloco-8 .container{
@@ -320,7 +320,7 @@ span{
     background-image: url('../imgs/bg-6.png'), url('../imgs/bolinhas-5.png');
     background-position: left center, left top;
     background-repeat: no-repeat;
-    background-size: 45%, 18%;
+    background-size: 40%, 18%;
 }
 
 .bloco-9 .container{
@@ -388,9 +388,17 @@ footer #copyright a:hover{
 }
 
 
-.mobile{
+.mobile-1{
     display: none;
     width: 100% !important;
+    margin: auto;
+    margin-top: 45px;
+}
+
+.mobile-2{
+    display: none;
+    width: 65% !important;
+    margin: auto;
     margin-top: 45px;
 }
 
@@ -442,7 +450,14 @@ footer #copyright a:hover{
         height: auto;
     }
 
-    .mobile{
+    .mobile-1, .mobile-2{
         display: inline !important;
     }
+
+    h1{
+        font-size: 7vh;
+        font-weight: 400;
+        margin-left: -8px;
+    }
+
     }
