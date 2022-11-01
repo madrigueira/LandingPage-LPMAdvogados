@@ -371,6 +371,23 @@ footer .container .box div{
     margin-top: 4vh;
 }
 
+footer #copyright{
+    text-align: center;
+    padding: 15px;
+    font-size: 1.1em;
+}
+
+footer #copyright a{
+    text-decoration: none;
+    color: #CC9463;
+    transition: 0.2s;
+}
+
+footer #copyright a:hover{
+    color: #F9BB1C;
+}
+
+
 .mobile{
     display: none;
     width: 100% !important;
@@ -408,6 +425,11 @@ footer .container .box div{
 
     .bloco-7 .container .grid img:first-child{
         display: none;
+    }
+
+    .btn{
+        display: flex;
+        margin: auto;
     }
 
     /*---------------------------------------*/
