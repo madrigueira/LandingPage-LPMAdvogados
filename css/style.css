@@ -149,7 +149,7 @@ span{
 }
 
 .bloco-4 .container .box{
-    padding: 45px 0;
+    padding: 0 0 30px 0;
 }
 
 .bloco-4 .container .box h5{
@@ -158,10 +158,11 @@ span{
 }
 
 .bloco-4 .container .box div{
-    padding: 12px 35px;
+    padding: 12px 30px;
     background-image: url('../imgs/arrow.png');
     background-repeat: no-repeat;
     background-position: left center;
+    background-size: 2.5vh;
 }
 
 .bloco-4 .container .box div p{
